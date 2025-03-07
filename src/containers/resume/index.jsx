@@ -17,7 +17,7 @@ const Resume = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = cvPDF;
-    link.setAttribute("download", "FinalCV-neba.pdf");
+    link.setAttribute("download", "TwodrosYirgaResume.pdf");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
