@@ -1,0 +1,53 @@
+{
+  "name": "tewodros-yirga-portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@fontsource/jetbrains-mono": "^5.2.5",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@radix-ui/react-tooltip": "^1.1.8",
+    "axios": "^1.7.2",
+    "formik": "^2.4.6",
+    "framer-motion": "^12.4.10",
+    "react": "^18.3.1",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.5.0",
+    "react-lazy-load-image-component": "^1.6.3",
+    "react-modal": "^3.16.1",
+    "react-router-dom": "^6.25.1",
+    "react-scroll": "^1.9.3",
+    "react-simple-animate": "^3.5.3",
+    "react-vertical-timeline-component": "^3.5.3",
+    "sass": "^1.85.1",
+    "shadcn-ui": "^0.9.5",
+    "smoothscroll-polyfill": "^0.4.4",
+    "styled-components": "^6.1.15",
+    "sweetalert2": "^11.17.2",
+    "swiper": "^11.2.5",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "vite": "^5.3.4"
+  }
+}

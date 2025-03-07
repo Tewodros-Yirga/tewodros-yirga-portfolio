@@ -1,0 +1,135 @@
+
+:root {
+  --navbar-bg-color: transparent;
+  --navbar-text-color: white;
+  --theme-color: #00ff99;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: var(--navbar-bg-color);
+  color: var(--navbar-text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0px 20px;
+    flex: 1;
+
+    &__logo {
+      width: 60%;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &__menu {
+      width: 60%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      list-style: none;
+      text-align: center;
+
+      &__item {
+        line-height: 40px;
+        margin-right: 1.5rem;
+        font-size: 1.5rem;
+
+        &::after {
+          content: "";
+          display: block;
+          height: 3px;
+          width: 0;
+          background: transparent;
+          transition: all 0.5s ease;
+        }
+
+        &:hover::after {
+          width: 100%;
+          background: var(--theme-color);
+        }
+
+        &__links {
+          text-decoration: none;
+          padding: 0.5rem;
+          cursor: pointer;
+          transition: color 0.3s ease, background-color 0.3s ease;
+
+          &.active-link {
+            color: var(--theme-color);
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar__container {
+    &__logo {
+      width: 50%;
+    }
+
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      position: absolute;
+      top: 80px;
+      left: -110%;
+      opacity: 0;
+      transition: all 0.5s ease;
+      backdrop-filter: blur(10px);
+      background: rgba(40, 40, 40, 0.8);
+      padding: 20px 0;
+
+      &.active {
+        left: 0px;
+        opacity: 1;
+      }
+
+      &__item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 0px;
+        padding: 15px 0px;
+
+        &__links {
+          color: white;
+          font-size: 1.2rem;
+
+          &.active-link {
+            color: var(--theme-color);
+            background: rgba(0, 255, 153, 0.1);
+            padding: 10px 20px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-icon {
+    display: block;
+    cursor: pointer;
+    color: var(--theme-color);
+    padding-right: 20px;
+  }
+}
