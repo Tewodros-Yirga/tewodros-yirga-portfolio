@@ -10,8 +10,10 @@ import { data } from "./utils";
 import "./styles.scss";
 import { MdWork, MdSchool, MdStar } from "react-icons/md";
 
+import cvPDF from "./TwodrosYirgaResume.pdf"; // Import the PDF file
+
 const Resume = () => {
-  const cvPDF = "/pdf/TwodrosYirgaResume.pdf";
+
 
   // Handle CV download
   const handleDownload = () => {

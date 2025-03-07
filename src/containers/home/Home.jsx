@@ -3,8 +3,10 @@ import Social from "./Social";
 import Photo from "./Photo";
 import "./styles.scss";
 
+import cvPDF from "./TwodrosYirgaResume.pdf"; // Import the PDF file
+
+
 const Home = () => {
-  const cvPDF = "/pdf/TwodrosYirgaResume.pdf";
 
     // Handle CV download
     const handleDownload = () => {
