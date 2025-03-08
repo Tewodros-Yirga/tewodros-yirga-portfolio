@@ -3,7 +3,7 @@ import Social from "./Social";
 import Photo from "./Photo";
 import "./styles.scss";
 
-import cvPDF from "./TwodrosYirgaResume.pdf"; // Import the PDF file
+import cvPDF from "./TewodrosYirgaCV.pdf"; // Import the PDF file
 
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
     const handleDownload = () => {
       const link = document.createElement("a");
       link.href = cvPDF;
-      link.setAttribute("download", "TwodrosYirgaResume.pdf");
+      link.setAttribute("download", "TewodrosYirgaCV.pdf");
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
