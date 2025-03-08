@@ -1,10 +1,10 @@
-import { FaGithub, FaLinkedinIn, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTelegram, FaPhone } from "react-icons/fa";
 
 const socials = [
-  { icon: <FaGithub />, path: "https://github.com/yourprofile" },
-  { icon: <FaLinkedinIn />, path: "https://linkedin.com/in/yourprofile" },
-  { icon: <FaYoutube />, path: "https://youtube.com/yourchannel" },
-  { icon: <FaTwitter />, path: "https://twitter.com/yourhandle" },
+  { icon: <FaGithub />, path: "https://github.com/Tewodros-Yirga" },
+  { icon: <FaLinkedinIn />, path: "https://linkedin.com/in/tewodros-yirga-dtu/" },
+  { icon: <FaTelegram />, path: "https://t.me/teddyy21m" },
+  { icon: <FaPhone />, path: "tel:+251955179500" },
 ];
 
 const Social = ({ containerStyles, iconStyles }) => {
