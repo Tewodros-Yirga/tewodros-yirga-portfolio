@@ -12,6 +12,15 @@ import {
   TooltipTrigger,
 } from "../../ui/tooltip";
 import { Link } from "react-router-dom";
+import admin from "./admin.png";
+import homepagedelivery from "./homepagedelivery.png";
+import deliveryzones from "./deliveryzones.png";
+import dronedeliveryproject from "./drone-delivery-project.png";
+import dronevideo from "./dronevid.MOV";
+import flightcontroller from "./flightcontroller.png";
+import pilot from "./pilot.png";
+import processing from "./Processing.png";
+import universityweb from "./universityweb2.png";
 
 const projects = [
   {
@@ -27,7 +36,7 @@ const projects = [
       { name: "Node.js" },
       { name: "Tailwind CSS" }
     ],
-    image: "/src/images/homepagedelivery.png",
+    image: homepagedelivery,
     live: "", 
     github: "", 
   },  
@@ -44,7 +53,7 @@ const projects = [
       { name: "PHP" },
       { name: "XAMPP (Apache & MySQL)" }
     ],
-    image: "/src/images/universityweb2.png",
+    image: universityweb,
     live: "", 
     github: "",
   },
@@ -62,7 +71,7 @@ const projects = [
       { name: "Node.js" },
       { name: "Tailwind CSS" }
     ],
-    image: "/src/images/admin.png",
+    image: admin,
     live: "", 
     github: "",
   },
@@ -80,7 +89,7 @@ const projects = [
       { name: "Tailwind CSS" },
       { name: "WebSockets" }
     ],
-    image: "/src/images/pilot.png",
+    image: pilot,
     live: "", 
     github: "",
   },  
@@ -95,7 +104,7 @@ const projects = [
       { name: "Tailwind CSS" },
       { name: "OpenStreetMap" }
     ],
-    image: "/src/images/deliveryzones.png",
+    image: deliveryzones,
     live: "", // Add live URL if available
     github: "", // Add GitHub repo link if available
   },  
@@ -110,7 +119,7 @@ const projects = [
       { name: "C++" },
       { name: "Embedded Systems" },
     ],
-    image: "/src/images/flightcontroller.png",
+    image: flightcontroller,
     live: "", 
     github: "",
   },
@@ -126,7 +135,7 @@ const projects = [
       { name: "Processing" },
       { name: "MPU6050" }
     ],
-    image: "/src/images/processing.png",
+    image:processing,
     live: "", 
     github: "",
   },
@@ -143,7 +152,7 @@ const projects = [
       { name: "Live Camera Feed" },
       { name: "Click next to see the video of the quadcopter" },
     ],
-    image: "/src/images/drone-delivery-project.png",
+    image:dronedeliveryproject,
     live: "", 
     github: "",
   },  
@@ -159,7 +168,7 @@ const projects = [
       { name: "Flight Controller" },
       { name: "Drone" },
     ],
-    video: "/src/images/dronevid.MOV",
+    video:dronevideo,
     live: "",
     github: "",
   },
