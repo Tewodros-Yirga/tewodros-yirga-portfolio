@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/tewodros-yirga-portfolio/, 
+  base: '/tewodros-yirga-portfolio/', 
   assetsInclude: ['**/*.MOV'],
 });
